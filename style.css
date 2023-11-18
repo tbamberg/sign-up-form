@@ -24,9 +24,32 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+:root {
+    --light-blue: #c2d1f2;
+    --light-pink: #f0d1d9;
+}
+
 body {
-    height: 100vh;
     display: flex;
+    height: 100vh;
+    background: whitesmoke;
+    font-family: "Alice", sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    width: 75%;
+}
+
+a {
+    color: inherit;
 }
 
 #logo-container {
@@ -35,7 +58,7 @@ body {
     justify-content: center;
     height: 100vh;
     width: 35%;
-    min-width: 460px;
+    min-width: 440px;
     
 }
 
@@ -51,23 +74,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3%;
+    gap: 1rem;
     height: 6rem;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.2);
-}
-
-#logo-text {
-    color: white;
-    font-family: "Alice", sans-serif;
-    font-size: 4rem;
 }
 
 #logo-image {
     height: 100%;
 }
 
-#credit {
+#logo-credit {
     position: absolute;
     bottom: 0.75rem;
     color: white;
@@ -75,6 +92,61 @@ body {
     font-size: 0.75rem;
 }
 
-#credit a {
-    color: white;
+
+#signup-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 65%;
+}
+
+form {
+    background-color: white;
+    box-shadow: 0 1px 3px gray;
+    padding: 1rem 0;
+}
+
+h2, h3, button, fieldset {
+    margin-left: 2rem;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    width: 50%;
+    text-transform: uppercase;
+}
+
+input {
+    width: 80%;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--light-blue);
+    border-radius: 2px;
+}
+
+label {
+    font-size: 0.75rem;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 5px 0px;
+    width: 10rem;
+    border: 2px solid var(--light-blue);
+    border-radius: 4px;
+    background-color: var(--light-blue);
+    box-shadow: 1px 1px 3px gray;
+    font-family: "Alice", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
 }
