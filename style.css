@@ -26,9 +26,10 @@ time, mark, audio, video {
 
 body {
     height: 100vh;
+    display: flex;
 }
 
-#left-container {
+#logo-container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -38,7 +39,7 @@ body {
     
 }
 
-#bg-image {
+#logo-bg-image {
     object-fit: cover;
     height: 100%;
     width: 100%;
