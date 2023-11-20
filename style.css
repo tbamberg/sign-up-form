@@ -45,7 +45,6 @@ h1 {
 h2 {
     margin-bottom: 1rem;
     font-size: 1.75rem;
-    width: 75%;
 }
 
 a {
@@ -101,13 +100,17 @@ a {
     width: 65%;
 }
 
+#cta {
+    width: 75%;
+}
+
 form {
     background-color: white;
     box-shadow: 0 1px 3px gray;
     padding: 1rem 0;
 }
 
-h2, h3, button, fieldset {
+#cta, h3, button, fieldset {
     margin-left: 2rem;
 }
 
@@ -116,16 +119,16 @@ fieldset {
     flex-wrap: wrap;
 }
 
-.input {
+input {
+    width: 80%;
+}
+
+.input-pair {
     display: flex;
     flex-direction: column;
     margin-bottom: 1rem;
     width: 50%;
     text-transform: uppercase;
-}
-
-input {
-    width: 80%;
 }
 
 input:focus {
@@ -142,11 +145,19 @@ button {
     margin-top: 1rem;
     padding: 5px 0px;
     width: 10rem;
-    border: 2px solid var(--light-blue);
+    border: none;
     border-radius: 4px;
     background-color: var(--light-blue);
     box-shadow: 1px 1px 3px gray;
     font-family: "Alice", sans-serif;
     font-weight: bold;
     font-size: 1rem;
+}
+
+button:hover {
+    background-color: #b6c5e4;
+}
+
+button:active {
+    transform: translateY(2px);
 }
